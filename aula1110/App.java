@@ -14,19 +14,21 @@ public class App {
         System.out.println(contas.length);
         for (int i = 0; i < contas.length; i++) {
         System.out.println("Qual é agencia do seu banco?");
-        String agencia = teclado.next();
+        String agencia = teclado.nextLine();
 
             System.out.println("Qual é o número da conta?");
-        String numero = teclado.next();
+        String numero = teclado.nextLine();
 
             System.out.println("Qual é o cpf?");
-        String cpf = teclado.next();
+        String cpf = teclado.nextLine();
 
             System.out.println("Qual é o nome do titular?");
-        String titular = teclado.next();
+        String titular = teclado.nextLine();
 
             System.out.println("qual é o saldo?");
         Double saldo = teclado.nextDouble();
+        teclado.nextLine();
+        // nextLine é usado para "limpar", quando não usado direto com String, tem que ser colocado em outra linha
         
         contas[i] = new Conta (agencia, numero, cpf, titular, saldo);
         }
