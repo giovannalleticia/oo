@@ -28,6 +28,15 @@ public class Pessoa {
 
       return true;
      }
+     public boolean removerPorIndex(Conta conta) {
+
+     int index = contas.indexOf (conta);
+
+        contas.remove(index);
+
+        return true;
+     }
+
 
      public String getNome() {
         return nome;

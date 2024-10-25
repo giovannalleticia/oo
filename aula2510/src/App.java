@@ -50,12 +50,12 @@ public class App {
         System.out.println("outraContaEstaNaLista: " + outraContaEstaNaLista);
 
 
-        int index = listaContas.indexOf (outraConta);
+        for (Conta conta : listaContas){
+            if (conta.getNumero().equals("1234")){
+                
+        }
 
-        listaContas.remove(index);
 
-
-        
 
         minhaConta.sacar(10);
 
